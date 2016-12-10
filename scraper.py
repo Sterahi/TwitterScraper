@@ -2,7 +2,7 @@ import scrapy
 
 class TwitterSpider(scrapy.Spider):
     name = 'twitter_spider'
-    start_urls = ['file://127.0.0.0.1/home/liz/Downloads/kirsy.html']
+    start_urls = ['file://127.0.0.0.1/home/liz/Downloads/scrape_me.html']
     def parse(self, response):
         SET_SELECTOR = '.js-stream-item'
         t_check = "False"
